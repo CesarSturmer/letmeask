@@ -1,12 +1,16 @@
+import { useAuth } from '../hooks/useAuth'
 import { Link } from 'react-router-dom'
 import { Button } from '../components/Button'
 import logoImg from '../assets/images/logo.svg'
 import illustration from '../assets/images/illustration.svg'
-
+import { ButtonDarkMode } from '../components/ButtonDarkMode'
 import '../styles/auth.scss'
 
 
 export function NewRoom() {
+
+  //const { user } = useAuth()
+
 
   return (
     <div id="page-auth">
@@ -16,6 +20,7 @@ export function NewRoom() {
         <strong>Crie salas de Q&A ao-vivo</strong>
         <p>Tire as dúvidas da sua aundiência em tempo real</p>
       </aside>
+
       <main >
         <div className="main-content">
           <img src={logoImg} alt="Logo" />
@@ -33,6 +38,9 @@ export function NewRoom() {
           </p>
         </div>
       </main>
+      <div className="button-dark-mode">
+        <ButtonDarkMode />
+      </div>
     </div>
   )
 }

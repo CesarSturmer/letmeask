@@ -5,20 +5,20 @@ export default createGlobalStyle`
   --background: ${props => props.theme.colors.background};
   --background-aside: ${props => props.theme.colors.backgroundAside};
   --border-input: ${props => props.theme.colors.borderInput};
+  --paragraph-text:  ${props => props.theme.colors.paragraphText};
+  --title: ${props => props.theme.colors.title};
+  --paragraph-text-join: ${props => props.theme.colors.title};
   
   
   
   
-  
-  --title: #FFFFFF;
-  --paragraph: #f8f8f8;
+  --paragraph: #f8f8f8; 
   
   
   
   --red: #E83F5B;
   --body-color: ${props => props.theme.colors.bodyColor};
   --gray-line: ${props => props.theme.colors.grayLine};
-  --text: ${props => props.theme.colors.text};
   --text-highlight: ${props => props.theme.colors.textHighlight};
   --blue: #5965E0;
   --blue-dark: #4953B8;

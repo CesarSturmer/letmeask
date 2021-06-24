@@ -10,14 +10,15 @@ declare module 'styled-components' {
       background: string;
       backgroundAside: string;
       borderInput: string;
+      paragraphText: string;
+      backgroundButtonDarkMode: string;
+      title: string;
+      paragraphTextJoin: string,
 
 
-
-      text: string;
       bodyColor: string;
       grayLine: string;
       textHighlight: string;
-      title: string;
       invertWhite: string;
       invertBlack: string;
       overlay: string;
