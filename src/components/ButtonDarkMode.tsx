@@ -10,7 +10,6 @@ export function ButtonDarkMode() {
   const { toggleTheme, theme } = useTheme();
 
   return (
-
     <Switch
       onChange={toggleTheme}
       checked={theme.title === 'dark'}
@@ -34,5 +33,6 @@ export function ButtonDarkMode() {
         </div>
       }
     />
+
   )
 }
