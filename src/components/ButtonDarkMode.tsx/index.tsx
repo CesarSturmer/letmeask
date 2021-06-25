@@ -1,10 +1,10 @@
-import { useTheme } from '../hooks/theme';
-import sun from '../assets/images/sun.svg';
-import moon from '../assets/images/moon.svg';
+import { useTheme } from '../../hooks/theme'
+import sun from '../../assets/images/sun.svg'
+import moon from '../../assets/images/moon.svg'
 import Switch from 'react-switch';
 
 
-import '../styles/components/buttonDarkMode.scss'
+import './style.scss'
 
 export function ButtonDarkMode() {
   const { toggleTheme, theme } = useTheme();
