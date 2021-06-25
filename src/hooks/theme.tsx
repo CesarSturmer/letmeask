@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useContext, useState } from 'react';
+import React, { createContext, useCallback, useContext } from 'react';
 import persistentData from '../utils/persistentData'
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { light, dark } from '../styles/theme/theme'

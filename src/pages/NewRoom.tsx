@@ -1,10 +1,10 @@
 import { FormEvent, useState } from 'react'
 import { useAuth } from '../hooks/useAuth'
 import { Link, useHistory } from 'react-router-dom'
-import { Button } from '../components/Button'
+import { Button } from '../components/Button/index'
 import logoImg from '../assets/images/logo.svg'
 import illustration from '../assets/images/illustration.svg'
-import { ButtonDarkMode } from '../components/ButtonDarkMode'
+import { ButtonDarkMode } from '../components/ButtonDarkMode.tsx/index'
 import '../styles/auth.scss'
 import { database } from '../services/firebase'
 

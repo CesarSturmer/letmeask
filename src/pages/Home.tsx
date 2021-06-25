@@ -7,15 +7,15 @@ import { useTheme } from '../hooks/theme';
 import illustration from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
 import googleIconImg from '../assets/images/google-icon.svg'
-import { Button } from '../components/Button'
-import { ButtonDarkMode } from '../components/ButtonDarkMode'
+import { Button } from '../components/Button/index'
+import { ButtonDarkMode } from '../components/ButtonDarkMode.tsx/index'
 
 import '../styles/auth.scss'
 
 
 export function Home() {
   const history = useHistory()
-  const { theme } = useTheme();
+  const { toggleTheme } = useTheme();
   const { user, signInWithGoogle } = useAuth()
 
   const [roomCode, setRoomCode] = useState('')
@@ -38,6 +38,11 @@ export function Home() {
 
     if (!roomRef.exists()) {
       alert('Room does not exists')
+      return
+    }
+
+    if(roomRef.val().endedAt) {
+      alert('Room already closed')
       return
     }
 
@@ -72,6 +77,8 @@ export function Home() {
 
           </form>
         </div>
+
+       
 
 
       </main>
