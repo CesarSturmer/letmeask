@@ -1,4 +1,5 @@
 import React, { createContext, useCallback, useContext, useState } from 'react';
+import persistentData from '../utils/persistentData'
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { light, dark } from '../styles/theme/theme'
 
@@ -30,6 +31,7 @@ declare module 'styled-components' {
 interface ThemeContextData {
   toggleTheme(): void;
   theme: DefaultTheme;
+
 }
 
 
@@ -39,7 +41,10 @@ const ThemeContext = createContext<ThemeContextData>({} as ThemeContextData);
 export const useTheme = () => useContext(ThemeContext);
 
 export const CustomThemeProvider: React.FC = ({ children }) => {
-  const [theme, setTheme] = useState<DefaultTheme>(light);
+
+  const [theme, setTheme] = persistentData<DefaultTheme>('theme', dark);
+
+  
 
   const toggleTheme = useCallback(() => {
     if (theme.title === 'light') {
