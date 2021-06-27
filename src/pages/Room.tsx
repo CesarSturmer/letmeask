@@ -67,14 +67,15 @@ export function Room() {
   }
   return (
     <div id="page-room">
-      {/* <div className="button-dark-mode">
+      <div className="button-dark-mode">
         <ButtonDarkMode />
-      </div> */}
+      </div>
       <header>
         <div className="content">
           <img src={logo} alt="logo" onClick={() => history.push('/')}/>
-          <RoomCode code={roomId} />
+          <RoomCode code={roomId} />          
         </div>
+     
       </header>
 
       <main>

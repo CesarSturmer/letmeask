@@ -13,6 +13,7 @@ import '../styles/rooom.scss'
 import { database } from '../services/firebase';
 import { Questions } from '../components/Questions';
 import { useRoom } from '../hooks/useRoom';
+import { useEffect } from 'react';
 
 
 type RoomParams = {
@@ -28,6 +29,7 @@ export function AdminRoom() {
   const roomId = params.id
 
   const { questions, title } = useRoom(roomId)
+
 
   async function handleEndRoom() {
     database.ref(`rooms/${roomId}`).update({
@@ -60,10 +62,12 @@ export function AdminRoom() {
 
   return (
     <div id="page-room">
-      {/* <div className="button-dark-mode">
+      <div className="button-dark-mode">
         <ButtonDarkMode />
-      </div> */}
-      <header>
+      </div>
+      {user ? (
+        <>
+          <header>
         <div className="content">
           <img src={logo} alt="logo"  onClick={() => history.push('/')}/>
           <div>
@@ -118,6 +122,11 @@ export function AdminRoom() {
           })}
         </div>
       </main>
+        </>
+      ) :  (
+        <h1>FAÇA LOGIN PARA ENTRAR</h1>
+      )}
+    
     </div>
   )
 }

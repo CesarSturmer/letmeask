@@ -11,6 +11,10 @@ export const light = {
     textHighlight: '#B3B9FF',
     title: '#29292E',
     paragraphTextJoin: '#737380',
+    paragraphRoom: '#737380',
+    buttonLoginRoom: '#835afd',
+
+
 
 
 
@@ -35,8 +39,8 @@ export const dark = {
     textHighlight: '#B3B9FF',
     title: '#F8F8F8',
     paragraphTextJoin: '#F8F8F8',
-
-
+    paragraphRoom: '#FFFFFF',
+    buttonLoginRoom: '#e559f9',
 
     
     
