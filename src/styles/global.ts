@@ -8,10 +8,11 @@ export default createGlobalStyle`
   --paragraph-text:  ${props => props.theme.colors.paragraphText};
   --title: ${props => props.theme.colors.title};
   --paragraph-text-join: ${props => props.theme.colors.title};
+  --paragraph-room: ${props => props.theme.colors.paragraphRoom};
+  --button-login-room:  ${props => props.theme.colors.paragraphRoom};
   
   
-  
-  
+
   --paragraph: #f8f8f8; 
   
   

@@ -14,8 +14,15 @@ declare module 'styled-components' {
       paragraphText: string;
       backgroundButtonDarkMode: string;
       title: string;
-      paragraphTextJoin: string,
+      paragraphTextJoin: string;
+      paragraphRoom: string;
+      buttonLoginRoom: string;
 
+
+
+
+
+      
 
       bodyColor: string;
       grayLine: string;
