@@ -65,11 +65,10 @@ export function AdminRoom() {
       <div className="button-dark-mode">
         <ButtonDarkMode />
       </div>
-      {user ? (
-        <>
-          <header>
+
+      <header>
         <div className="content">
-          <img src={logo} alt="logo"  onClick={() => history.push('/')}/>
+          <img src={logo} alt="logo" onClick={() => history.push('/')} />
           <div>
             <RoomCode code={roomId} />
             <Button isOutline onClick={handleEndRoom}>Encerar Sala</Button>
@@ -122,11 +121,9 @@ export function AdminRoom() {
           })}
         </div>
       </main>
-        </>
-      ) :  (
-        <h1>FAÇA LOGIN PARA ENTRAR</h1>
-      )}
-    
+
+
+
     </div>
   )
 }
