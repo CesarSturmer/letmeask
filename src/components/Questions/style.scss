@@ -8,6 +8,20 @@
   & + .question {
     margin-top: 8px;
   }
+
+  //se tiver a classe aplica esse efeito
+  &.hightlighted {
+    background: #f4f0ff;
+    border: 1px solid  #835afd;
+
+    footer .user-info span {
+      color: #29292e;
+    }
+  }
+
+  &.aswered {
+    background: #DBDCDD;
+  }
   
   
   p {
@@ -38,6 +52,13 @@
         font-size: 14px;
       }
     }
+
+    > div {
+      display: flex;
+      gap: 16px;
+    }
+
+
     button {
       border: 0;
       background: transparent;

@@ -1,4 +1,6 @@
 import { ReactNode } from 'react'
+
+import cx from 'classnames'
 import './style.scss'
 
 
@@ -9,18 +11,27 @@ type QuestionsProps = {
     avatar: string;
   }
   children?: ReactNode;
+  isHightlighted?: boolean,
+  isAnswered?: boolean,
 }
 
 export function Questions({
   content,
   author,
-  children
+  children,
+  isHightlighted = false,
+  isAnswered = false,
 }: QuestionsProps) {
 
+// cx = pacote classname pra ts. simplica a verificação para condição de classes;
 
 
   return (
-    <div className="question">
+    <div className={cx(
+      'question', 
+      {aswered: isAnswered},
+      {hightlighted: isHightlighted && !isAnswered}
+    )}>
       <p>{content}</p>
       <footer>
         <div className="user-info">
