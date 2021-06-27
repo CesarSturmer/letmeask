@@ -3,6 +3,10 @@
   align-items: stretch;
   height: 100vh;
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }
+
   aside {
     flex: 7;
     background: var(--background-aside);
@@ -12,6 +16,10 @@
     justify-content: center;
 
     padding: 120px 80px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      flex: 5;
+    }
 
     img {
       max-width: 320px;

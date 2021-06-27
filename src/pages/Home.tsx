@@ -14,8 +14,7 @@ import '../styles/auth.scss'
 
 
 export function Home() {
-  const history = useHistory()
-  const { toggleTheme } = useTheme();
+  const history = useHistory()  
   const { user, signInWithGoogle } = useAuth()
 
   const [roomCode, setRoomCode] = useState('')
