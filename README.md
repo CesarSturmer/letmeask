@@ -4,7 +4,7 @@
 <br>
 
 # About 📃
- Letmeask foi desenvolvido durante #NLW5 da [Rocketseat](https://app.rocketseat.com.br).
+ Letmeask foi desenvolvido durante #NLW6 da [Rocketseat](https://app.rocketseat.com.br).
 <br>
 
 
