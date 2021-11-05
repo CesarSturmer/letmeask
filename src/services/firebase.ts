@@ -1,20 +1,22 @@
-import firebase from 'firebase/app';
+import 'firebase/auth'
+import 'firebase/database'
 
-import 'firebase/auth';
-import 'firebase/database';
+import firebase from 'firebase/app'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDE-npB2NewsumAMXgdJFlAwDZkuLi_7_w",
-  authDomain: "page-7f29d.firebaseapp.com",
-  projectId: "page-7f29d",
-  storageBucket: "page-7f29d.appspot.com",
-  messagingSenderId: "109448461231",
-  appId: "1:109448461231:web:bf6be8d62f01f094670d5a",
-  databaseURL: "https://page-7f29d-default-rtdb.firebaseio.com/",
+  apiKey: "AIzaSyD51KHiDsl8SNVd12NQPmZ2weMNE25UscE",
+  authDomain: "letmeask-82e50.firebaseapp.com",
+  databaseURL: "https://letmeask-82e50-default-rtdb.firebaseio.com",
+  projectId: "letmeask-82e50",
+  storageBucket: "letmeask-82e50.appspot.com",
+  messagingSenderId: "778342802244",
+  appId: "1:778342802244:web:c5d661a94164e7f7eded11"
 };
 
 firebase.initializeApp(firebaseConfig);
 
+const auth = firebase.auth();
+
 const database = firebase.database();
 
-export { database, firebase }
+export { database, firebase, auth }

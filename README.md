@@ -1,18 +1,48 @@
 # Letmeask
 
 <img alt="Move.it" title="Move.it" src="https://imgur.com/KUtP8GC.png" />
+<img alt="Move.it" title="Move.it" src="https://imgur.com/S91qsmN.png" />
 <br>
 
 # About 📃
- Letmeask foi desenvolvido durante #NLW5 da [Rocketseat](https://app.rocketseat.com.br).
+ Letmeask foi desenvolvido durante #NLW6 da [Rocketseat](https://app.rocketseat.com.br). Projeto para usuários fazer perguntas em salas de reuniões, priorizando a ordem  
 <br>
 
+## Requirements 🔧
+  - [Node](https://nodejs.org/en/)
+  - [Yarn](https://yarnpkg.com/getting-started/install)
 
+
+# Tecnologias  🚀
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+<p>
+<img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" alt="Sass" width="70" height="70"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" alt="react" width="70" height="70"/>
+<img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" alt="typescript" width="70" height="70"/>
+
+</p>
+
+## Getting Started 🚀 
+
+
+  Clone the project and access the folder
+
+  ```bash
+    $ git clone https://github.com/CesarSturmer/letmeask.git
+  ```
+  Starter Aplication:
+
+  ```bash
+    cd podcaster
+
+    $ yarn install
+    &&
+    $ npm start | yarn start
+
+  ```
 
 # Getting Started with Create React App
 
-
-https://imgur.com/KUtP8GC
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
