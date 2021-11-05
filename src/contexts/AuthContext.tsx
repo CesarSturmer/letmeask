@@ -1,5 +1,7 @@
-import React, { createContext, useState, useEffect, ReactNode } from 'react'
-import { firebase, auth } from '../services/firebase'
+import React, { createContext, ReactNode, useEffect, useState } from 'react'
+
+import { auth, firebase } from '../services/firebase'
+
 type User = {
   id: string;
   name: string;
@@ -19,7 +21,7 @@ type AuthContextProviderProps = {
 export const AuthContext = createContext({} as AuthContextType)
 
 
-export function AuthContextProvider (props: AuthContextProviderProps) {
+export function AuthContextProvider(props: AuthContextProviderProps) {
 
   const [user, setUser] = useState<User>()
   //unsubscribe descadastra desse evento, deixando de ficar ouvindo o eventlistener
@@ -61,9 +63,9 @@ export function AuthContextProvider (props: AuthContextProviderProps) {
     }
   }
   return (
-  <AuthContext.Provider value={{ user, signInWithGoogle }}>
-    {props.children}
-  </AuthContext.Provider>
+    <AuthContext.Provider value={{ user, signInWithGoogle }}>
+      {props.children}
+    </AuthContext.Provider>
 
   )
 }
